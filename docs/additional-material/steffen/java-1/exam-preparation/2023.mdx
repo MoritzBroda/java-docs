@@ -306,7 +306,7 @@ classDiagram
     <<abstract>>
     #energySource EnergySource &lcub; final &rcub;
     +Phone(energySource: EnergySource)
-    +readyForUse()* boolean
+    +readyForUse() boolean*
   }
 
   class CablePhone {
@@ -348,17 +348,17 @@ classDiagram
   eingesteckt und eingeschalten ist.
 
 ### Hinweise zur Klasse SmartPhone
-
-- Die minimale Energie soll 200 betragen.
+- Die minimale Energie soll 200 betragen. 
 - Der Konstruktor soll alle Attribute initialisieren.
 - Die Methode readyForUse soll true zurückgeben, wenn die Energie des
   Smartphones die minimal erforderliche Energie überschreitet.
+Hinweis: Die maximale Energie beträgt 1000!
 
 ### Hinweise zur Klasse ExamTask04
 
 Erzeuge ein Kabeltelefon mit Akku und eines, dass an die Steckdose angeschlossen
 ist. Erzeuge ein leeres Smartphone und eines das halb voll ist. Speichere alle
-erzeugten Fahrzeuge in einer ArrayList. Ermittle mithilfe einer Schleife die
+erzeugte Telefone in einer ArrayList. Ermittle mithilfe einer Schleife die
 Anzahl der betriebsbereiten Telefone. Gib die Anzahl in der Konsole aus.
 
 ## Aufgabe 8
